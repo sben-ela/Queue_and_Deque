@@ -1,0 +1,26 @@
+// Initialization:
+
+// std::queue<T> myQueue; - Creates an empty queue of type T.
+// Insertion:
+
+// push(value); - Adds an element to the back of the queue.
+// Access:
+
+// front(); - Returns a reference to the front (oldest) element.
+// Removal:
+
+// pop(); - Removes the front (oldest) element.
+// Size and Capacity:
+
+// size(); - Returns the number of elements in the queue.
+// empty(); - Checks if the queue is empty.
+// Miscellaneous:
+
+// swap(otherQueue); - Swaps the contents of two queues.
+
+// ! These operations represent the core functionality of a queue,
+// ! which follows the First-In-First-Out (FIFO) principle. Elements 
+// ! are added to the back of the queue (enqueue), and they are removed 
+// ! from the front (dequeue). std::queue does not provide direct access 
+// ! to elements other than the front element;
+// ! you typically access and manipulate elements in a queue in a FIFO manner

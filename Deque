@@ -1,0 +1,74 @@
+Initialization:
+
+std::deque<T> myDeque; - Creates an empty deque of type T.
+std::deque<T> myDeque(size, value); - Creates a deque of size size with each element initialized to value.
+std::deque<T> myDeque(begin, end); - Creates a deque with elements from the range specified by begin and end.
+
+
+Insertion:
+
+push_back(value); - Adds an element to the back of the deque.
+push_front(value); - Adds an element to the front of the deque.
+insert(iterator, value); - Inserts an element at the specified position.
+insert(iterator, n, value); - Inserts n copies of value at the specified position.
+insert(iterator, begin, end); - Inserts elements from the range [begin, end) at the specified position.
+
+Access:
+
+front(); - Returns a reference to the first element.
+back(); - Returns a reference to the last element.
+at(index); - Returns a reference to the element at the specified index.
+operator[]; - Allows direct access to elements using the [] operator.
+
+Removal:
+
+pop_back(); - Removes the last element.
+pop_front(); - Removes the first element.
+erase(iterator); - Removes the element at the specified position.
+erase(begin, end); - Removes elements in the range (begin, end).
+clear(); - Removes all elements, leaving the deque empty.
+
+Size and Capacity:
+
+size(); - Returns the number of elements in the deque.
+empty(); - Checks if the deque is empty.
+resize(new_size); - Changes the size of the deque.
+resize(new_size, value); - Changes the size and initializes new elements to value.
+capacity(); - Returns the current storage capacity of the deque.
+
+Iterators:
+
+begin(); - Returns an iterator to the beginning.
+end(); - Returns an iterator to the end.
+rbegin(); - Returns a reverse iterator to the beginning.
+rend(); - Returns a reverse iterator to the end.
+
+Modifiers:
+
+swap(otherDeque); - Swaps the contents of two deques.
+assign(count, value); - Replaces the contents with count copies of value.
+assign(begin, end); - Replaces the contents with elements from the range [begin, end].
+
+Miscellaneous:
+
+emplace(position, args...) - Constructs and inserts an element at the specified position.
+emplace_back(args...) - Constructs and inserts an element at the back.
+emplace_front(args...) - Constructs and inserts an element at the front.
+
+
+
+
+
+//  deque() - initialize a blank deque.
+//  deque(n,x) - initialize a deque of length n with all values as x.
+//  push_back(x) - append data x at the end.
+//  pop_back() - erase data at the end.
+//  push_front(x) - append data x at the beginning.
+//  pop_front() - erase data at the beginning.
+//  front() - returns the first element(value) in the deque.
+//  back() - returns the last element(value) in the deque.
+//  empty() - returns true if deque is empty else returns false.
+//  size() - returns the current size of deque.
+//  resize(x, d) - changes the size dynamically. If the new size is greater than the current size of the deque, then fill the empty space with the default value d.
+//  clear() - remove all elements of deque.
+//  D[n] - returns the nth element of the deque.
